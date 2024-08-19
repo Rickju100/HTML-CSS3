@@ -1,0 +1,49 @@
+
+#mailbox {
+    width: 25%;
+    height: 500px;
+    border: 1px red solid;
+    margin: 20% auto; /*first is vertical value, second horizontal. This is to position the value in the middle of the site */
+    color: rgb(236, 166, 61);
+    border-radius: 5px;
+    box-shadow: 0 10px 15px 10px; /*sombreados, 4 dimensiones, arriba, derecha, abajo, izquierda*/
+    padding: 2%;
+
+}
+
+input{
+    width: 80%;
+    margin: 5px 10%; /*first is vertical value, second horizontal. This is to position the informs individualy */
+    border: none;
+    background-color: rgb(243, 236, 236);
+    text-align: center;
+
+    min-height: 50px;
+    border-radius: 5px;
+}
+
+input[type="text"]:hover{
+    border-bottom: 1px blue solid;
+}
+
+input[type="password"]:hover{
+    border-bottom: 1px lightcoral solid;
+}
+
+input[type="button"]
+{
+    width: 50%;
+    margin: 5px 25% ;
+    background-color: rgb(5, 80, 80);
+    border-radius: 5px;
+
+}
+
+p{
+    text-align: center;
+}
+
+img{
+    width: 40%;
+    margin: 5px 30%;
+}

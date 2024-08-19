@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <title>GOOGLE PROJECT</title>
+</head>
+
+<body>
+    <!-- This is the header section, not a full menu, but links that sent to important sites (Hyperlinks) -->
+    <header>
+        <nav>
+            <a href="https://accounts.google.com/v3/signin/identifier?continue=https%3A%2F%2Fmail.google.com%2Fmail%2F%26ogbl%2F&emr=1&ifkv=Ab5oB3r56jroCRXlO49SFN4bhiU0LFH_jhl69ycbfgmvZQgiF5llThDpAaXYhnrQ4ZZa9_kpPqv8&ltmpl=default&ltmplcache=2&osid=1&passive=true&rm=false&scc=1&service=mail&ss=1&flowName=GlifWebSignIn&flowEntry=ServiceLogin&dsh=S2032661637%3A1723912334199908&ddm=0">Gmail</a>
+            <a href="https://www.google.com/imghp?hl=en&ogbl">Images</a>
+            <a href="" id="icon-apps">
+                <span class="material-symbols-outlined">
+                    apps
+                </span>
+            </a>
+            <a href="https://accounts.google.com/v3/signin/identifier?continue=https%3A%2F%2Fwww.google.com%2F&ec=GAZAmgQ&hl=en&ifkv=Ab5oB3rltPmgHBBJbKY8Uyn8lzUHdXZt1RLgP1-h2yQToxw400-Kf-0aOubCH6GJQrT8__Of5PdRKQ&passive=true&flowName=GlifWebSignIn&flowEntry=ServiceLogin&dsh=S-1825026495%3A1723912311839734&ddm=0" id="Sign-in">LOG IN</a>
+
+        </nav>
+    </header>
+
+    <!---Here start the main part of the site, the search bar, the buttoms and the logo --->
+
+    <!---logo--->   
+    <div id="main">
+
+        <div id="main-logo">
+            <img src="IMAGES/google.gif" alt="">
+        </div>
+
+    <!--- search bar --->
+        <div id="search-bar">
+            <span class="material-symbols-outlined">
+                search
+            </span>
+            <form action="">
+                <input type="text" id="searcher">
+            </form>
+            <span class="material-symbols-outlined">
+                mic
+            </span>
+            <span class="material-symbols-outlined">
+                photo_camera
+            </span>
+        </div>
+
+    <!--- buttons --->       
+        <div id="buttons">
+            <form action="">
+                <input type="button" id="button1" onclick="colorchanging()"  value="Google Search">
+                <input type="button" id="button2" onclick="lucky(button2)" value=" I'm Feeling Luckky">
+            </form>
+        </div>
+        <p>Google offered in: 
+            <a href="https://www.google.com/setprefs?sig=0_NHgNkJXQuxlASmQxbKDGlFHWT6Y%3D&hl=en&source=homepage&sa=X&ved=0ahUKEwiz5Z-vl_yHAxVSMEQIHT4kFe8Q2ZgBCBU">English
+            </a>
+        </p>
+
+    </div>
+
+    <!--- Here is the footer, mostly about the country, and other links, example settings, terms, etc.. hyperlinks  --->
+    <footer>
+
+        <div id="country">
+            <p>
+                Costa Rica
+            </p>
+        </div>
+       
+        <div id="others">
+            <div id="footer-links1">
+                <a href="https://about.google/?utm_source=google-CR&utm_medium=referral&utm_campaign=hp-footer&fg=1">About</a>
+                <a href="https://ads.google.com/intl/es-419/home/">Advertising</a>
+                <a href="https://smallbusiness.withgoogle.com/intl/es-419/?subid=ww-ww-et-g-awa-a-g_hpbfoot1_1!o2&utm_source=google&utm_medium=ep&utm_campaign=google_hpbfooter&utm_content=google_hpbfooter&gmbsrc=ww-ww-et-gs-z-gmb-s-z-u~sb-g4sb_srvcs-u&c=CR#!/">Business</a>
+                <a href="https://www.google.com/search/howsearchworks/?fg=1">How search works</a>            
+            </div>
+    
+            <div id="footer-links2">
+                <a href="https://policies.google.com/privacy?hl=en-CR&fg=1">Privacy</a>
+                <a href="https://policies.google.com/terms?hl=en-CR&fg=1">Terms</a>
+                <a href="">Settings</a>
+            </div> 
+        </div>
+
+        
+        <script src="SCRIPTS/scripts.js"></script>
+
+    </footer>
+
+</body>
+
+</html>

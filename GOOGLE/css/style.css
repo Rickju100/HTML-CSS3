@@ -1,0 +1,196 @@
+/* Body instructions to make all the date set in the same aspects of no margin, padding and font*/
+body{
+    background-color: #202124;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header*/
+
+header{
+    width: 100%;
+    height: 60px;
+}
+
+header  nav{
+    display: flex; /* creates a flex box*/
+    justify-content: flex-end; /* this display the items at the end of the flex*/
+    align-items: center;
+    padding: 10px 0;
+}
+
+header nav a{ 
+    color: white;
+    padding: 0 10px;
+    text-decoration: none; /* this remove the underline of the a items in the nav*/
+    display: inline-block;
+}
+
+
+#icon-apps{
+    display: inline-block;
+    padding: 5px;
+    border-radius: 30%;
+}
+#icon-apps:hover{
+    background-color: #323338;
+}
+
+header nav a:hover {
+    text-decoration: underline;
+}
+
+#Sign-in{
+    background-color: #8cbcff;
+    border-radius: 10px ;
+    padding: 10px 30px;
+    margin-left: 20px;
+    text-align: center;
+    margin-right: 10px;
+    border: none;
+
+}
+
+#Sign-in:hover{
+    text-decoration: none;
+    color: #ffffff;;
+    box-shadow: 1px 1px 1px 1px;
+
+}
+
+/*Main, search bar*/
+
+#main{ 
+
+    text-align: center; /* this will make all the valus in main, to get into the center*/
+    margin-top: 150px;
+}
+
+#main-logo { /* this targets the div of main logo itself, always remember it is a box */
+        width: 530px;
+        margin: 0 auto; /* this will make the logo to have 0 margin up and auto on left- right to set in the center */
+        margin-bottom: 35px;
+    }
+
+div #main-logo img { /* This target the image inside the div main logo */
+        width: 80%;
+}
+
+#search-bar{ /* remember this target the div box of the search bar, not the input parameter itselfs */
+    width: 525px;
+    height: 40px;
+    margin: 0 auto;
+    border: 1px solid #454545;
+    margin-bottom: 35px;
+    border-radius: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#searcher{
+    width: 420px;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    color:white ;
+    font-size: 14px;
+}
+
+#search-bar:hover{
+    background-color: #454545 ;
+}
+
+div #search-bar span {
+    margin: 3px;
+    color: #9aa0a6;
+}
+
+#buttons{ /* this target the div container of the buttons inputs */
+    width: 530px;
+    height: 40px;
+    margin: 0 auto;
+    display: inline-block;
+}
+
+div #buttons input[type="button"]{
+    height: 36px;
+    border-radius: 5px;
+    background-color: #333333;
+    border: none;
+    font-size: 14px;
+    color: #f2f2f2 ;
+    padding: 0 15px;
+    margin: 0 5px;
+    border:  transparent ;
+}
+
+div #buttons input[type="button"]:hover{
+    border: 1px solid #4d4d4d ;
+}
+
+#main p{ /* for some reason i can not write div #main p, does not works i guess is because main and div main is the same, cause main is the id, so prob this is redundant*/
+    color: white;
+}
+#main p a {
+    color: #8cbcff;
+    text-decoration: none;
+}
+
+#main p a:hover {
+    text-decoration: underline;
+}
+
+/* Footer, some aditional hyperlinks and the country*/
+footer {
+    width: 100%;
+    position: absolute;
+    bottom: 0; /* this will make the footer have no margin in the buttom */
+    background: #131313;
+
+}
+
+#country{ /* This target the container */
+    padding: 5px 0;
+    border-bottom: 1px solid #484b4e;
+    height: 40px;
+
+}
+
+#country p{
+    margin: none;
+    margin-top: 13px;
+    margin-left: 25px;
+    color: white;
+    font-size: 14px;
+
+}
+
+#others{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 30px;
+    margin: auto;
+    padding: 10px 0;
+   
+    
+
+
+}
+#others a{
+    color: #9aa0a6;
+    font-size: 14px;
+    text-decoration: none;
+    margin: 10px;
+    display: inline-block;
+   
+}
+
+#others a:hover{
+    color: white;
+    text-decoration: underline;
+}
+
