@@ -2,7 +2,7 @@
 var color = "#202124"
 
 function colorchanging(){
-var body = document.querySelector("body")
+let body = document.querySelector("body")
     if (color === "#202124") {
         body.style.backgroundColor = "#CBBCBC";
         color = "#CBBCBCF"
@@ -17,7 +17,7 @@ var body = document.querySelector("body")
 
 
 function lucky (id){
-    var button2 = document.getElementById("button2")
+    let button2 = document.getElementById("button2")
     location.href ="https://doodles.google/"
     
 }
