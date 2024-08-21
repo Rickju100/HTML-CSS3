@@ -5,15 +5,13 @@ body{
     margin: 0;
 }
 
-div{
-    border: 1px blue solid;
-}
+
 /*Div 1 will hide after user press start button*/
 #div1{width: 800px;
     background-color: black;
     margin: 0 auto;
     height: 200px;
-    display: flex;
+
     flex-direction: column;
     margin-top: 200px;
     color: white;
@@ -41,7 +39,7 @@ div{
     width: 400px;
     margin: 10px auto;
     margin-bottom: 10px;
-    border: 1px solid red;
+  
     
 }
 
@@ -49,7 +47,7 @@ div{
 #div2{width: 800px;
     margin: 0 auto;
     height: 300px;
-    display: flex;
+     /* can hide*/
     flex-direction: column;
     justify-content: space-evenly;
     margin-top: 100px;
@@ -66,6 +64,12 @@ div{
 #div2 h3{
     margin-top: 0;
     margin-left: 15px;
+}
+
+#feedback{
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
 }
 
 form{
@@ -103,11 +107,12 @@ input[type="button"]{
     font-size: 20px;
 }
 
+
 /* after user select the valid option the div1 and div3 will be shown*/
 #div3{width: 400px;
     margin: 0 auto;
     height: 50px;
-    display: flex;
+    
     margin-top: 0;
     justify-content: space-evenly;
     margin-top: 100px;
