@@ -88,7 +88,7 @@ function iniciando() {
     let div2 = document.getElementById("div2")
     let div3 = document.getElementById("div3")
     let textin = document.getElementById("input")
-    console.log(textin)
+    console.log(textin.value)
 
     randomizer()
     timer()
@@ -102,9 +102,11 @@ function iniciando() {
     if (div3.style.display == 'flex') {
         div3.style.display = 'none'
     }
+    
+    if (textin.value !== "") {
+        textin.value = ""
+    }
 
-    if(textin.placeholder !== "Type the number Here!" )
-    {textin.placeholder = "Type the number Here!"; }
 
     counter = 0
     document.getElementById("count").innerHTML = counter;
