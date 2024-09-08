@@ -1,0 +1,71 @@
+header{
+    display: flex;
+    
+    margin-bottom: 100px;
+}
+
+nav{
+    padding: 0;
+    margin-top: 20px;
+    height: 20px;
+    border: red 1px solid;
+    display: flex;
+    justify-content: right;
+   
+}
+   
+
+
+ul{ /*here is where i have to define the grid for the menu */
+    width: 600px;
+    height: 30px;
+    margin-left: 1000px;
+    padding-top: 0;
+    display: flex;
+    justify-content: right;
+    align-items: end;
+    border: blue solid 1px;
+    
+
+}
+
+li{
+    display: grid;
+    justify-content: end;
+    text-align: right;
+    font-size: 25px;
+    padding: 0 20px;
+    
+}
+
+nav ul li form select{
+    font-size: 25px;
+    background: transparent;
+}
+
+#Productos{
+    display: grid;
+    grid-template-columns: 500px 300px 300px 300px;
+    column-gap: 1em;
+    margin-left: 50px;
+
+    
+
+}
+
+#Productos div{
+   border: black 1px solid;
+
+  
+
+   
+
+}
+
+
+
+#shopping_cart{
+    width: 100px;
+    height: 50px;
+}
+
