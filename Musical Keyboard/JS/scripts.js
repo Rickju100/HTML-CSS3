@@ -1,37 +1,37 @@
 window.addEventListener("keydown", handleKeydown);
 window.addEventListener("click", handleOnClick);
+const letras = ["a", "s", "d", "f", "g", "h", "j", "k", "l"];
 
 function handleKeydown(eventDetails) {
-  sizing();
   const key = eventDetails.key.toLowerCase(); 
-  const audiofile = document.getElementById(eventDetails.key);
-  audiofile.currentTime = 0;
-  audiofile.play();
-
-  
+  if (letras.includes(key)) {
+    playAndSizing(key);
+  }
 
 } 
 
-function sizing() {
-  const letras = ["a", "s", "d", "f", "g", "h", "j", "k", "l"];
-  letras.forEach((key) => {
+function handleOnClick(eventDetails) {
+  let element = document.getElementById(eventDetails.target.id);
+  if (element !== null) {
+    let key = element.id.slice(1);
+    playAndSizing(key);
+  }
+}
+
+
+function playAndSizing(key) {
+  const audiofile = document.getElementById(key);
+  audiofile.currentTime = 0;
+  audiofile.play();
     let button = document.getElementById(`b${key}`);
     if (button) {
       button.style.animationIterationCount = "1";
       button.style.animationName = "sizer"; 
-      button.style.animationDuration = "1s";
+      button.style.animationDuration = "0.20s";
+      button.style.animationPlayState = "running";
 
       button.addEventListener('animationend', () => {
         button.style.animationName = "";
       });
     }
-  });
-}
-  
-
-function handleOnClick(eventDetails) {
-  let element = document.getElementById(eventDetails.target.id).value;
-  const audiofile = document.getElementById(element);
-  audiofile.currentTime = 0;
-  audiofile.play();
 }
