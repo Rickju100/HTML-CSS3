@@ -6,7 +6,6 @@
     <link rel="stylesheet" href="CSS/style.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,500..700,0..1,-50..200" />
     <title>SHOP</title>
-
 </head>
 <body>
 
@@ -16,9 +15,9 @@
             <li></li>
             <li>
                 <form>
-                    <select><!---so far now, i think this selector will really important, however, i need to try to make in the css to show only when hover ---->
+                    <select>
                         <option value="homeProducts">Home Products</option>
-                        <optionv value="technology">Technology</option>
+                        <option value="technology">Technology</option>
                         <option value="garden">Garden</option>
                         <option value="Food">Food</option>
                         <option value="Others">Others</option>
@@ -27,36 +26,22 @@
             </li>
             <li>Offers</li>
             <li>About us</li>
-           
         </ul>
         <div>
             <span id="shopping_cart" class="material-symbols-outlined">
                 shopping_cart
-                </span> <!---here goes the shop cart for the api  ---->
+            </span>
         </div>
     </nav>
-    
 </header>
 
-<section id="Productos">
-    <!---i can also not write the divs here, and create them with js from the api ---->
-    <!---Consider also here not making that many dives, or, in css make them as corrusel https://css-tricks.com/css-only-carousel/ ---->
-    <div><img src="IMAGES/product.png" alt="product"></div>
-    <div><img src="IMAGES/product.png" alt="product"></div>
-    <div><img src="IMAGES/product.png" alt="product"></div>
-    <div><img src="IMAGES/product.png" alt="product"></div>
-    <div><img src="IMAGES/product.png" alt="product"></div>
-    <div><img src="IMAGES/product.png" alt="product"></div>
-    <div><img src="IMAGES/product.png" alt="product"></div>
-    <div><img src="IMAGES/product.png" alt="product"></div>
+<div id="Productos">
+    <!-- Product items will be dynamically added here -->
+</div>
 
-</section>
-
-</body>
-
-<!--- Footer/script --->
 <footer>
     <script src="SCRIPTS/script.js"></script>
-
 </footer>
+
+</body>
 </html>
