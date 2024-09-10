@@ -2,10 +2,10 @@ document.addEventListener("DOMContentLoaded", function() { /* in the research i 
     const apiURL = "https://fakestoreapi.com/products";
     console.log(apiURL)
 
-    function product(data){
+    function product(Array){
         let container = document.getElementById("Productos");
         console.log(container)
-        for (const producto of data.result){
+        for (const producto of Array.result){
             let item = document.createElement("div");
             item.classList.add("item");
             item.innerHTML = producto.name.toUpperCase();
@@ -20,3 +20,4 @@ document.addEventListener("DOMContentLoaded", function() { /* in the research i 
         })
     
 });
+
