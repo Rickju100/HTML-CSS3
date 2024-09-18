@@ -95,10 +95,11 @@ nav button a{
 
 #Productos div{
    border: black 1px solid;
-
-  
-
-   
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+ 
 
 }
 
@@ -109,3 +110,27 @@ nav button a{
     height: 50px;
 }
 
+
+.item{
+    padding: 10px  10px;
+}
+
+.item {
+    color: rgb(47, 0, 255);
+    text-align: center;
+    font-size: 15px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.picture{
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+    margin: 0 auto;
+}
+
+.picture:hover{
+    box-shadow: red  30px 10px 20px 15px; /*Here i have 4 values (v) v1= offset-x, v2=offset-y, v3= blur-radius, v4= spread-radius*/
+    cursor: pointer;
+    
+}

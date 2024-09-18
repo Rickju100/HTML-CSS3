@@ -1,23 +1,29 @@
-document.addEventListener("DOMContentLoaded", function() { /* in the research i did, this will help the code to lade after the dom has loaded*/
-    const apiURL = "https://fakestoreapi.com/products";
-    console.log(apiURL)
 
-    function product(Array){
-        let container = document.getElementById("Productos");
-        console.log(container)
-        for (const producto of Array.result){
-            let item = document.createElement("div");
-            item.classList.add("item");
-            item.innerHTML = producto.name.toUpperCase();
-            container.appendChild(item);
-        }
+const apiURL = "https://fakestoreapi.com/products";
+console.log(apiURL)
+
+function product(Array){
+    let container = document.getElementById("Productos");
+    console.log(Array);
+    for (const producto of Array){
+        let item = document.createElement("div");
+        item.classList.add("item");
+        item.innerHTML = producto.title.toUpperCase();
+        container.appendChild(item);
+        
+        let picture = document.createElement("img");
+        picture.classList.add("picture");
+        picture.src= "IMAGES/product.png";
+        item.appendChild(picture);
+        
+       
     }
+}
 
-    fetch(apiURL)
-        .then((promise) => promise.json())
-        .then(function (result) {
-            product(result);
-        })
-    
-});
+fetch(apiURL)
+    .then((promise) => promise.json())
+    .then(function (result) {
+        product(result);
+    })
+
 
