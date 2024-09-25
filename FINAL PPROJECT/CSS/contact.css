@@ -50,10 +50,17 @@ nav li:hover ul.dropdown{
 #cont{
     width: 30%;
     height: 800px;
-    border: 1px red solid;
     margin: 0 auto;
     margin-top: 20px;
+    border: #63a6d6 1px solid;
 }
+
+#cont:hover{
+    color: #7A2048;
+    box-shadow:  0 10px 15px 10px;
+   
+}
+
 
 div{
     display: flex;
@@ -64,7 +71,6 @@ div{
 /* Here Start the inputs */
 
 form{
-    border: red 1px solid;
     display: grid;
     grid-template-columns:  90%; 
     justify-content: center;
