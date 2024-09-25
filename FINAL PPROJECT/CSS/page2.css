@@ -65,6 +65,7 @@ nav li:hover ul.dropdown{
 }
 #Productos div img{
     padding-top: 20px;
+    margin: auto;
 }
 
 #jewelery1 {
@@ -87,4 +88,10 @@ h1{
     color: #7A2048;
     text-align: center;
     margin-top: 50px;
+}
+
+#Productos div{
+    border: 1px solid rgb(108, 108, 145);
+    border-radius: 3%;
+
 }
