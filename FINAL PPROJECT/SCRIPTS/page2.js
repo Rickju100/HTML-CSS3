@@ -1,17 +1,18 @@
 
-const apiURL = "https://fakestoreapi.com/products";
+
+const apiURL = "https://fakestoreapi.com/products/category/jewelery";
 console.log(apiURL)
 
 function product(Array){
     let container = document.getElementById("Productos");
     console.log(Array);
     cont = 1
-    obj = "objeto"
+    obj = "jewelery"
     for (const producto of Array){
         let item = document.createElement("div");
         item.classList.add("item");
         item.id= obj + cont;
-        item.innerHTML = producto.description.toUpperCase();
+        item.innerHTML = producto.title.toUpperCase();
         container.appendChild(item);
         
         let picture = document.createElement("img");
@@ -28,5 +29,3 @@ fetch(apiURL)
     .then(function (result) {
         product(result);
     })
-
-

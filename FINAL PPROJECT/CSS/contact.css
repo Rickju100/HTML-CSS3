@@ -1,0 +1,145 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+/* Here Start the nav menu */
+
+nav ul {
+    list-style: none;
+    background: #1E2761;
+}
+
+nav ul li {
+    display: inline-block;
+    position: relative;
+}
+
+nav ul li a {
+    display: block;
+    padding: 20px 25px;
+    color: aliceblue;
+    text-decoration: none;
+    text-align: center;
+    font-size: 20px;
+}
+
+nav li ul.dropdown li {
+    display: block ;
+}
+
+nav li ul.dropdown {
+    width: 100%;
+    background-color: #7A2048 ;
+    position: absolute;
+    z-index: 999;
+    display: none;
+}
+
+nav ul li a:hover { 
+    background: #408EC6;
+
+}
+nav li:hover ul.dropdown{
+    display: block  ;
+} 
+/* Here ends the nav menu*/
+
+/* Here Start the Body*/
+
+#cont{
+    width: 30%;
+    height: 800px;
+    border: 1px red solid;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+div{
+    display: flex;
+    flex-direction: column;
+    width: auto;
+}
+
+/* Here Start the inputs */
+
+form{
+    border: red 1px solid;
+    display: grid;
+    grid-template-columns:  90%; 
+    justify-content: center;
+    
+}
+
+form input[type="submit"]{
+    width: 30%;
+    margin: auto;
+    background-color: #1E2761;
+    color: #408EC6;
+    font-size: 18px;
+   
+}
+form input[type="submit"]:hover{
+    background-color: #39479c;
+    color: #63a6d6;
+ 
+   
+}
+
+
+form input[type="text"]{
+    margin: auto;
+    width: 100%;
+    background-color: #408EC6;
+    color: white;
+    font-size: 25px;
+}
+
+form input[type="text"]:hover{
+    box-shadow: #1E2761 0 5px 5px 5px;
+}
+
+
+form input[type="text"]::placeholder{
+    color: white;
+    font-size: 18px;
+    text-align: center;
+}
+
+form input[type="tel"]{
+    margin: auto;
+    width: 100%;
+    background-color: #408EC6;
+    color: white;
+    font-size: 25px;
+}
+form input[type="tel"]:hover{
+    box-shadow: #1E2761 0 5px 5px 5px;
+}
+
+
+form input[type="tel"]::placeholder{
+    color: white;
+    font-size: 18px;
+    text-align: center;
+}
+
+@media screen and ((max-width: 992px))  {
+    body{
+        background-color: rgb(121, 161, 194);
+    }
+    form input[type="text"]{
+        margin: auto;
+        width: 100%;
+    }
+}
+
+@media screen and ((max-width: 600px))  {
+    body{
+        background-color: rgb(197, 190, 190);
+    }
+    form input[type="text"]{
+        margin: auto;
+        width: 100%;
+    }
+}
